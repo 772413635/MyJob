@@ -1,0 +1,75 @@
+﻿/*iphone6*/
+@media only screen and (max-width:375px) {
+    #reorder {
+        display: block;
+    }
+
+    #largeTitle {
+        font-size: 32px;
+        margin-top: 100px;
+    }
+
+    #smallTitle {
+        font-size: 14px;
+        margin-top: 48px;
+    }
+
+    #nextTitle {
+        font-size: 30px;
+        margin-top: 58px;
+    }
+
+    #lastTitle {
+        font-size: 20px;
+        margin-top: 58px;
+    }
+
+
+
+    #navBg {
+        top: 0;
+        right: 5px;
+        background: none;
+        box-shadow: none;
+        color: #333;
+    }
+
+    #menuAction {
+        display: block;
+        cursor: pointer;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #aboutMe, #skill, #workExperience, #projectExperience, #education, #contactUs {
+        padding-top: 40px;
+    }
+
+    #profileImage {
+        width: 100%;
+        height: 300px;
+        float: none;
+    }
+
+        #profileImage > img {
+            margin-top: 40px !important;
+            width: 240px;
+        }
+
+    #meContent {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .experience {
+        display: none;
+    }
+
+    #contactUsTable {
+        display: none;
+    }
+}

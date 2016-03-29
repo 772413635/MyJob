@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0,user-scalable = no">
+    <title>个人简历</title>
+    <link href="css/base.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/prettify/r224/prettify.css">
+    <link href="css/fontAwesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/iphone6.css" rel="stylesheet" />
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/raphael-min.js" type="text/javascript"></script>
+    <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
+    <script src="js/DES.js"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="head">
+        <label id="largeTitle">我是一名软件工程师</label><br />
+        <label id="smallTitle">我在寻找一份有乐趣有前途的工作</label><br />
+        <label id="nextTitle">接下来</label><br />
+        <label id="lastTitle">请浏览我的简历</label>
+    </div>
+    <div id="navBg">
+        <i id="reorder" class="icon-reorder"></i>
+        <ul id="nav">
+            <li class="nav_li_active" data-index="0">首页</li>
+            <li data-index="1">关于</li>
+            <li data-index="2">技能</li>
+            <li data-index="3">经验</li>
+            <li data-index="4">项目</li>
+            <li data-index="5">教育</li>
+            <!--<li>作品</li>-->
+            <li data-index="7">联系</li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="aboutMe">
+            <div id="profileImage" class="cleft">
+                <img src="images/me.jpg" alt="" style="margin-top: 100px;" />
+            </div>
+            <div id="meContent" class="cleft">
+                <h1 style="width: 111px;display:block">关于我</h1>
+                <span class="name">许宏刚</span><br />
+                <span class="job">.NET</span><span class="job">高级软件开发工程师</span><br />
+                <div class="contentText" style="margin-top: 20px;">
+                    男&nbsp;&nbsp;<span id="age"></span>岁&nbsp;&nbsp;(1990年12月20日)<br />
+                    未婚<br />
+                    4年.NET开发经验<br />
+                    目前年薪7-8万人民币
+                </div>
+                <span class="appraisal">自我评价</span>
+                <div class="contentText" style="margin-top: 8px">
+                    精通C#,mvc,js,ajax等开发技术<br />
+                    具有优秀的组织能力，和协调能力<br />
+                    责任感强
+                </div>
+                <a class="downloadPrint" href="files/许宏刚-个人简历.doc" target="_blank">下载简历</a>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div id="skill">
+            <h1>我的技能</h1>
+            <ul class="skillUl">
+                <li>
+                    <div id="box1" class="numberBox">
+                        <!--<ul>
+                                <li class="number">C#</li>
+                                <li class="number_remark">精通</li>
+                            </ul>-->
+                    </div>
+                    <label class="name">吃饭的工具</label>
+                    <label class="description">微软公司发布的一种面向对象的、运行于.NET Framework之上的高级程序设计语言</label>
+                </li>
+                <li>
+                    <div id="box2" class="numberBox">
+                        <!--                        <ul>-->
+                        <!--                            <li class="number">MVC</li>-->
+                        <!--                            <li class="number_remark">精通</li>-->
+                        <!--                        </ul>-->
+                    </div>
+                    <label class="name">如果c#是我的筷子的话，它就是<br />我的饭碗，缺一就丢了饭碗</label>
+                    <label class="description">是微软官方提供的以MVC模式为基础的ASP.NET Web应用程序(Web Application)框架</label>
+                </li>
+                <li>
+                    <div id="box3" class="numberBox">
+                        <!--                        <ul>-->
+                        <!--                            <li class="number">JS</li>-->
+                        <!--                            <li class="number_remark">精通</li>-->
+                        <!--                        </ul>-->
+                    </div>
+                    <label class="name">不仅能挣钱，还能在萌妹面前露一手</label>
+                    <label class="description">一种直译式脚本语言，是一种动态类型、弱类型、基于原型的语言，内置支持类型</label>
+                </li>
+                <li>
+                    <div id="box4" class="numberBox">
+                    </div>
+                    <label class="name">直接提升代码逼格</label>
+                    <label class="description">轻量级的js库</label>
+                </li>
+                <li>
+                    <div id="box5" class="numberBox">
+                    </div>
+                    <label class="name">这都不会，还码什么码</label>
+                    <label class="description">超文本标记语言</label>
+                </li>
+                <li>
+                    <div id="box6" class="numberBox">
+                    </div>
+                    <label class="name">码农必会,你懂的</label>
+                    <label class="description">Microsoft 公司推出的关系型数据库管理系统</label>
+                </li>
+            </ul>
+        </div>
+        <div id="workExperience">
+            <h1>工作经验</h1>
+            <ul class="experience">
+                <li>
+                    <div class="timeLine">
+                        <label class="startDate">2013 / 10</label>
+                        <label class="endDate">2015 / 03</label>
+                    </div>
+                    <div class="company">
+                        <h2>苏州盛景技术有限公司</h2>
+                        <h3>.NET软件工程师/项目经理</h3>
+
+                    </div>
+                </li>
+                <li class="line">
+                    <table class="workContent">
+                        <tr>
+                            <td class="tdtitle"></td>
+                            <td class="tdcontent">
+                                研发公司基础组件
+                                <br />
+                                开发和维护公司产品
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <div class="timeLine">
+                        <label class="startDate">2011 / 07</label>
+                        <label class="endDate">2013 / 10</label>
+                    </div>
+                    <div class="company">
+                        <h2>统一通信有限公司</h2>
+                        <h3>C#软件工程师 </h3>
+
+                    </div>
+                </li>
+                <li class="line">
+                    <table class="workContent">
+                        <tr>
+                            <td class="tdtitle"></td>
+                            <td class="tdcontent">
+                                通信呼叫中心平台的开发和运营
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+        <div id="projectExperience">
+            <h1>项目经验</h1>
+            <ul class="experience">
+                <li>
+                    <div class="timeLine">
+                        <label class="startDate">2014 / 02</label>
+                        <label class="endDate">2015 / 03</label>
+                    </div>
+                    <div class="company">
+                        <h2>市政综合监管平台&nbsp;&nbsp;<a target="_blank" href="http://www.mapscene365.com/xiangqing.html?category=ff752b4b-a4fe-4c08-8761-1ad926e551bd&page=1&size=0">详细>></a> </h2>
+                        <h3>Visual Studio 2010 | c#，Jquery，sqlserver </h3>
+                    </div>
+                </li>
+                <li class="line">
+                    <table class="workContent">
+                        <tr><td style="height: 20px"></td></tr>
+                        <tr>
+                            <td class="tdtitle">
+                                <label class="projectRemark">项目描述</label>
+                            </td>
+                            <td class="tdcontent">
+                                市政综合监管平台结合市政管理单位的行政职责和工作内容，道路、桥涵、照明、河道、污水、排水、燃气等管理对象，市政企业生产运营安全等方面的监管及行业管理，实现对市政综合信息的一体化监管，实现基础数据及业务数据的互联互通与集中共享，提高城市市政相关信息的准确性和现势性，整合基于物联网的面向设施在线监控系统，实现各类市政设施及其监控设备运维状态信息，提高市政工作的管理和监督水平，为智慧城市提供有力的支撑。
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdtitle">
+                                <label class="userRemark">责任描述</label>
+                            </td>
+                            <td class="tdcontent">
+                                项目经理<br />
+                                需求调研、项目范围、项目质量、项目时间、项目成本的确认<br />
+                                制定开发计划并得到上级领导、及项目组成员认可<br />
+                                设置项目组中的各种角色，并分配好各角色的责任与权限<br />
+                                项目的开发和实施<br />
+                                安排客户培训工作
+                            </td>
+                        </tr>
+                        <tr><td style="height: 50px"></td></tr>
+                    </table>
+                </li>
+                <li>
+                    <div class="timeLine">
+                        <label class="startDate">2013 / 10</label>
+                        <label class="endDate">2014 / 01</label>
+                    </div>
+                    <div class="company">
+                        <h2>盛景应用基础框架平台</h2>
+                        <h3>Visual Studio 2010 | c#，Jquery，sqlserver </h3>
+                    </div>
+                </li>
+                <li class="line">
+                    <table class="workContent">
+                        <tr><td style="height: 20px"></td></tr>
+                        <tr>
+                            <td class="tdtitle">
+                                <label class="projectRemark">项目描述</label>
+                            </td>
+                            <td class="tdcontent">
+                                对项目共同的资源进行组件化，将开发好的组件提供给每个项目引用，对重复的资源进行标准与规范化以此来提高开发效率
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdtitle">
+                                <label class="userRemark">责任描述</label>
+                            </td>
+                            <td class="tdcontent">
+                                开发人员<br />
+                                组件的设计及开发<br />
+                                代码规范的制定
+                            </td>
+                        </tr>
+                        <tr><td style="height: 50px"></td></tr>
+                    </table>
+                </li>
+                <li>
+                    <div class="timeLine">
+                        <label class="startDate">2012 / 11</label>
+                        <label class="endDate">2013 / 10</label>
+                    </div>
+                    <div class="company">
+                        <h2>统一通信CC销售管家&nbsp;&nbsp;<a target="_blank" href="http://www.uccc.cc/">详细>></a> </h2>
+                        <h3>Visual Studio 2010 | c#，Jquery，sqlserver </h3>
+                    </div>
+                </li>
+                <li class="line">
+                    <table class="workContent">
+                        <tr><td style="height: 20px"></td></tr>
+                        <tr>
+                            <td class="tdtitle">
+                                <label class="projectRemark">项目描述</label>
+                            </td>
+                            <td class="tdcontent">
+                                CC销售管家，由统一通信（苏州）有限公司自主研发的精准营销媒体。它以全国用户手机和固定电话终端为传播载体，通过最尖端语音模拟技术和强大数据库后台支撑，让合作企业在茫茫人海中随时锁定潜在目标客户群体，与其进行“一对一”沟通精准营销服务，把要宣传的产品介绍给企业潜在客户人群，实现企业广告有效投放、客户信息分析反馈、意向客户快速筛选和业务产品精准营销等众多强大功能的呼叫中心产品。
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdtitle">
+                                <label class="userRemark">责任描述</label>
+                            </td>
+                            <td class="tdcontent">
+                                开发人员<br />
+                                产品开发和维护<br />
+                                解决客户在使用系统时产生的问题
+                            </td>
+                        </tr>
+                        <tr><td style="height: 50px"></td></tr>
+                    </table>
+                </li>
+                <li>
+                    <div class="timeLine">
+                        <label class="startDate">2011 / 07</label>
+                        <label class="endDate">2013 / 10</label>
+                    </div>
+                    <div class="company">
+                        <h2>统一托管型呼叫中心&nbsp;&nbsp;<a target="_blank" href="http://www.uccc.cc/">详细>></a> </h2>
+                        <h3>Visual Studio 2010 | c#，Jquery，sqlserver </h3>
+                    </div>
+                </li>
+                <li class="line">
+                    <table class="workContent">
+                        <tr><td style="height: 20px"></td></tr>
+                        <tr>
+                            <td class="tdtitle">
+                                <label class="projectRemark">项目描述</label>
+                            </td>
+                            <td class="tdcontent">
+                                统一托管型呼叫中心是一款用于企业推广产品（服务）的在线运营平台，为电话销售、用户投诉处理、用户满意度调查等工作提供操作支持。
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdtitle">
+                                <label class="userRemark">责任描述</label>
+                            </td>
+                            <td class="tdcontent">
+                                开发人员<br />
+                                产品开发和维护<br />
+                                日常的值班，及时解决系统使用过程中产生的问题
+                            </td>
+                        </tr>
+                        <tr><td style="height: 50px"></td></tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+        <div id="education">
+            <h1>教育经历</h1>
+            <ul class="experience">
+                <li>
+                    <div class="timeLine">
+                        <label class="startDate">2009 / 9</label>
+                        <label class="endDate">2012 / 07</label>
+                    </div>
+                    <div class="company">
+                        <h2>苏州工业职业技术学院</h2>
+                        <h3>计算机应用 | 大专</h3>
+
+                    </div>
+                </li>
+                <li class="line">
+                    <table class="workContent">
+                        <tr>
+                            <td class="tdtitle"></td>
+                            <td class="tdcontent">
+                                所学专业包括的课程有：office办公套件，windows server 2003，c，c#，java，photoshop，cisco，linux，sqlserver，asp.net
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+        <div id="contactUs">
+            <h1>取得联系</h1>
+            <table id="contactUsTable">
+                <tr>
+                    <td style="width: 45%">
+                        <h2>联系方式</h2>
+                        <ul id="contactInfo">
+                            <li><h3>苏州市吴中经济开发区小石湖路6号小石城花园5区</h3></li>
+                            <li><h3>15250471220</h3></li>
+                            <li><h3>xhgainxq@gmail.com</h3></li>
+                            <li><h3>http://job.isaacxu.com</h3></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h2>给我留言</h2>
+                        <table id="sendEmail">
+                            <tr><td><input id="txtName" class="sendInput" type="text" value="姓名：" /></td></tr>
+                            <tr><td><input id="txtEmail" class="sendInput" type="text" value="邮箱：" /></td></tr>
+                            <tr><td><textarea id="tarContent" class="sendInput">内容：</textarea></td></tr>
+                            <tr><td><button class="downloadPrint sendButton" type="button" onclick="sendMessage()">发送</button></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
