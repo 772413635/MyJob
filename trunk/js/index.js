@@ -46,6 +46,12 @@ $(function () {
                     $.scrollTo("#education", 500);
                 }
                 break;
+            case 6:
+                {
+
+                    $.scrollTo("#works", 500);
+                }
+                break;
             case 7:
                 {
 

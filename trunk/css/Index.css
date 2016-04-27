@@ -495,3 +495,22 @@ textarea[class='sendInput'] {
 #reorder {
     display: none;
 }
+/**************我的作品模块**************/
+.worksList {
+    margin: 0 auto;
+}
+.worksList:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.worksList li {
+    list-style: none;
+    float: left;
+    width: 150px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 10px;
+}
