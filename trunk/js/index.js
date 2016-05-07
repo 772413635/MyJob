@@ -1,6 +1,4 @@
-﻿var birthday = new Date(1990, 12, 20);
-var age;
-$(function () {
+﻿$(function () {
     setAge();
     drawCircle();
     $(".workUl li:even").css("background", "#f3f2f3");
@@ -64,14 +62,17 @@ $(function () {
 
 //设置年龄
 function setAge() {
+    var birthday = new Date(1990, 11, 20);//初始化生日1990-12-20
+    var startWookDate = new Date(2011, 6, 1);//开始工作日期
+    var age,wookAge;
     var nowDate = new Date();
-    var realDate = new Date(nowDate.getFullYear(), 11, 20);
-    if ((realDate - nowDate) > 0) {
-        age = nowDate.getFullYear() - birthday.getFullYear();
-    } else {
-        age = nowDate.getFullYear() - birthday.getFullYear() + 1;
-    }
-    $("#age").text(age);
+    var realDate = new Date(nowDate.getFullYear(), 11, 20);//今年生日
+    var readWookDate = new Date(nowDate.getFullYear(), 6, 1);//今年的工作周年
+    age = (nowDate.getFullYear() - birthday.getFullYear()) * 12 + nowDate.getMonth() - birthday.getMonth()//年龄月数
+    $("#age").text(parseInt(age / 12));
+    wookAge = (nowDate.getFullYear() - startWookDate.getFullYear()) * 12 + nowDate.getMonth() - startWookDate.getMonth()//工作月数
+
+    $("#wookAge").text(parseInt(wookAge / 12) + "年" + (wookAge % 12) + "月");
 }
 
 //绘制图形
