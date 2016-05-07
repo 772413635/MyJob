@@ -1,4 +1,4 @@
-﻿var birthday = new Date(1990, 11, 20);
+﻿var birthday = new Date(1990, 12, 20);
 var age;
 $(function () {
     setAge();
@@ -80,7 +80,7 @@ function drawCircle() {
     var paper1 = Raphael(document.getElementById("box1"), 118, 118);
     c1 = paper1.circle(60, 59, 54);
     t1 = paper1.text(60, 55, "C#");
-    t1_1 = paper1.text(60, 75, "熟练");
+    t1_1 = paper1.text(60, 75, "精通");
     c1.attr({
         "stroke": "#373737",
         "stroke-width": 6,
@@ -101,7 +101,7 @@ function drawCircle() {
     var paper2 = Raphael(document.getElementById("box2"), 118, 118);
     c2 = paper2.circle(60, 59, 54);
     t2 = paper2.text(60, 55, "MVC");
-    t2_1 = paper2.text(60, 75, "熟练");
+    t2_1 = paper2.text(60, 75, "精通");
     c2.attr({
         "stroke": "#373737",
         "stroke-width": 6,
@@ -122,7 +122,7 @@ function drawCircle() {
     var paper3 = Raphael(document.getElementById("box3"), 118, 118);
     c3 = paper3.circle(60, 59, 54);
     t3 = paper3.text(60, 55, "JS");
-    t3_1 = paper3.text(60, 75, "熟练");
+    t3_1 = paper3.text(60, 75, "精通");
     c3.attr({
         "stroke": "#373737",
         "stroke-width": 6,
@@ -162,7 +162,7 @@ function drawCircle() {
     var paper5 = Raphael(document.getElementById("box5"), 118, 118);
     c5 = paper5.circle(60, 59, 54);
     t5 = paper5.text(60, 55, "HTML");
-    t5_1 = paper5.text(60, 75, "熟练");
+    t5_1 = paper5.text(60, 75, "精通");
     c5.attr({
         "stroke": "#373737",
         "stroke-width": 6,
